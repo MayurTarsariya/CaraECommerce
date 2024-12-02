@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"
+        integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/icon.webp">
+    <title>Cara E-Commerce</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="product-invoice">
+            <div class="invoice-header">
+                <div class="company-details">
+                    <img src="./images/icon.webp" alt="This is icon">
+                    <h1>Cara E-Commerce</h1>
+                </div>
+                <div class="invoice-text">
+                    <img src="./images/invoice.webp" alt="invoice logo">
+                </div>
+            </div>
+            <div class="invoice-numberdate">
+                <h3 class="bill-number"></h3>
+                <h3 class="date"></h3>
+            </div>
+            <hr>
+            <div class="invoice-address">
+                <div class="from">
+                    <h3>Bill From: </h3>
+                    <p>Cara E-Commerce,</p>
+                    <p>39199 Aron Creek, Bartolettiland, Missouri - 55273, Panama,</p>
+                    <p>+01 2222 365 /(+91) 01 6453 4563</p>
+                </div>
+                <div class="to">
+                    <h3>Bill to: </h3>
+                    <p>Jhon Deo,</p>
+                    <p>B/322, 3 Rd Flr, Bhaveshwar Arcade, mumbai, 400086,</p>
+                    <p>+02 02223080513</p>
+                </div>
+            </div>
+            <hr>
+            <div class="invoice-details">
+                <table width="50%">
+                    <thead>
+                        <tr>
+                            <td>ITEM</td>
+                            <td>QUANTITY</td>
+                            <td>PRICE</td>
+                            <td>SUBTOTAL</td>
+                        </tr>
+                    </thead>
+                    <tbody class="invoice-data"></tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="final-invoice">
+            </div>
+        </section>
+    </main>
+    <section class="nav-button">
+        <button class="normal back">BACK TO CART <i class="fa-solid fa-arrow-left"></i></button>
+        <button class="normal download">DOWNLOAD INVOICE <i class="fa-solid fa-download"></i></button>
+    </section>
+    <script src="./invoice.js"></script>
+</body>
+
+</html>
